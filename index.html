@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Snake</title>
-    <script src="script.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="gameContainer">
-        <h1>Snake</h1>
-        <h2>Level</h2>
-        <h3 id="levelValue">1</h3>
-        <h2>Score</h2>
-        <h3 id="scoreValue">0</h3>
-        <canvas class="gameCanvas" id="gameCanvas" width="800" height="600"></canvas>
-    </div>
-    <div class="fade" id="message">
-        <p class="gameOverTitle">Game Over</p>
-        <p class="gameRestartTitle">press SPACE for restart</p>
-    </div>
+<div class="start-container" id="startContainer">
+    <img class="game-logo" src="cartoon-1293047_640.png">
+    <button class="start-btn" id="startBtn">Play</button>
+    <h2 class="game-name">Snake</h2>
+    <p class="slogan">Eat apples and grown!</p>
+</div>
+<div class="gameContainer">
+    <h1>Snake</h1>
+    <h2>Level</h2>
+    <h3 id="levelValue">1</h3>
+    <h2>Score</h2>
+    <h3 id="scoreValue">0</h3>
+    <canvas class="gameCanvas" id="gameCanvas" width="800" height="600"></canvas>
+</div>
+<div class="fade" id="message">
+    <p class="gameOverTitle">Game Over</p>
+    <p class="gameRestartTitle">press SPACE for restart</p>
+</div>
+<script defer src="script.js"></script>
 </body>
 </html>

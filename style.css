@@ -2,6 +2,53 @@ body {
     margin: 0;
 }
 
+.start-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-logo {
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+.start-btn{
+    border: 2px solid;
+    border-radius: 8px;
+    background-color: #ffe500;
+    padding: 10px 20px;
+    color: #262121;
+    font-size: larger;
+    margin-bottom: 70px;
+}
+
+.game-name, .slogan{
+    color: #ed1164;
+}
+
+.game-name{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.slogan{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
 .gameContainer {
     margin: 0;
     position: absolute;

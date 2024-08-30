@@ -1,13 +1,15 @@
 document.addEventListener('keydown', onKeyPress, false);
 
+let startBtn = document.getElementById("startBtn");
+startBtn.addEventListener('click', onPlayBtnClick);
+
 window.onload = function () {
     console.log("load");
     gameCanvas = document.getElementById("gameCanvas");
     ctx = gameCanvas.getContext("2d");
-    restartGame();
-
-
 }
+
+
 
 let gameCanvas = null;
 let ctx = null;
@@ -20,6 +22,15 @@ let lastTickTime = 0;
 let gameOver = false;
 let score = 0;
 let level = 1;
+
+
+
+
+function onPlayBtnClick(){
+    console.log("click");
+    document.getElementById("startContainer").style.visibility="hidden";
+    restartGame();
+}
 
 function  restartGame (){
     document.getElementById("message").style.visibility="hidden";
@@ -36,6 +47,8 @@ function  restartGame (){
     updateScore();
     updateLevel();
 }
+
+
 
 function drawRectangle(x, y, width, height, color, thickness = 1) {
     ctx.fillStyle = '#000';
